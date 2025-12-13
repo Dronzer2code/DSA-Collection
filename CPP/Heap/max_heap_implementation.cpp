@@ -1,27 +1,3 @@
-/****************************************
-Problem: Max Heap Implementation
-
-Description:
-Implements a Max Heap data structure for integers. Supports the following operations:
-- Build a heap from a given array of integers.
-- Insert a new element into the heap while maintaining the max-heap property.
-- Retrieve the maximum element without removing it.
-- Extract (remove) the maximum element from the heap.
-- Delete a specific key from the heap.
-- Print the current elements of the heap.
-
-The max-heap property ensures that for every node i, the value of i is greater than or
-equal to its children. The heap is stored internally as a dynamic array.
-
-Time Complexity:
-- buildHeap: O(n) - heapify applied to all non-leaf nodes
-- insertValue: O(log n) - may traverse up the height of the heap
-- extractMax: O(log n) - heapify down from root
-- removeKey: O(log n) - heapify up/down as needed
-
-Space Complexity: O(n) - stores the heap elements in a vector
-****************************************/
-
 #include<bits/stdc++.h>
 using namespace std;
 
